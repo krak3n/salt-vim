@@ -1,50 +1,62 @@
 " Vundle
 "--------------------------------------------------------------------------
 
-" Setting up Vundle - the vim plugin bundler
-let iCanHazVundle=1
-let vundle_readme=expand("~/.vim/bundle/vundle/README.md")
-if !filereadable(vundle_readme) 
-    echo "Installing Vundle.."
-    echo ""
-    silent !mkdir -p ~/.vim/bundle
-    silent !git clone https://github.com/gmarik/vundle ~/.vim/bundle/vundle
-    let iCanHazVundle=0
-endif
-" Setting up Vundle - the vim plugin bundler end
+" Vundle
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+    " Setting up Vundle - the vim plugin bundler
+        let iCanHazVundle=1
+        let vundle_readme=expand("~/.vim/bundle/vundle/README.md")
+        if !filereadable(vundle_readme) 
+            echo "Installing Vundle.."
+            echo ""
+            silent !mkdir -p ~/.vim/bundle
+            silent !git clone https://github.com/gmarik/vundle ~/.vim/bundle/vundle
+            let iCanHazVundle=0
+        endif
+        set rtp+=~/.vim/bundle/vundle/
+        call vundle#rc()
+        Bundle 'gmarik/vundle'
 
-""" Core
-Bundle 'gmarik/vundle'
-Bundle 'Lokaltog/vim-powerline'
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'sjl/vitality.vim'
-" For Powerline
-Bundle 'tpope/vim-fugitive'
+    " Setting up Vundle - the vim plugin bundler end
 
-"""" Interface
-Bundle 'kien/ctrlp.vim'
-Bundle 'myusuf3/numbers.vim'
-Bundle 'scrooloose/nerdtree'
-Bundle 'fholgado/minibufexpl.vim'
+    " Bundles
 
-""" Syntax
-Bundle 'evanmiller/nginx-vim-syntax'
-Bundle 'plasticboy/vim-markdown'
-Bundle 'Glench/Vim-Jinja2-Syntax'
-Bundle 'groenewege/vim-less'
-Bundle 'hail2u/vim-css3-syntax'
-Bundle 'othree/html5.vim'
-Bundle 'saltstack/salt-vim'
+	" Core
+	Bundle 'Lokaltog/vim-powerline'
+	Bundle 'altercation/vim-colors-solarized'
+	Bundle 'sjl/vitality.vim'
+	" For Powerline
+	Bundle 'tpope/vim-fugitive'
 
-""" Python
-Bundle 'python.vim'
-Bundle 'nvie/vim-flake8'
-Bundle 'hynek/vim-python-pep8-indent'
-Bundle 'davidhalter/jedi-vim'
-Bundle 'ervandew/supertab'
+	" Interface
+	Bundle 'kien/ctrlp.vim'
+	Bundle 'myusuf3/numbers.vim'
+	Bundle 'scrooloose/nerdtree'
+	Bundle 'fholgado/minibufexpl.vim'
+
+	" Syntax
+	Bundle 'evanmiller/nginx-vim-syntax'
+	Bundle 'plasticboy/vim-markdown'
+	Bundle 'Glench/Vim-Jinja2-Syntax'
+	Bundle 'groenewege/vim-less'
+	Bundle 'hail2u/vim-css3-syntax'
+	Bundle 'othree/html5.vim'
+	Bundle 'saltstack/salt-vim'
+
+	" Python
+	Bundle 'python.vim'
+	Bundle 'nvie/vim-flake8'
+	Bundle 'hynek/vim-python-pep8-indent'
+	Bundle 'davidhalter/jedi-vim'
+	Bundle 'ervandew/supertab'
+
+    " Bundles end
+    if iCanHazVundle == 0
+        echo "Installing Bundles, please ignore key map error messages"
+        echo ""
+    :BundleInstall
+    endif
+" Vundle end
 
 "--------------------------------------------------------------------------
 " General Settings
