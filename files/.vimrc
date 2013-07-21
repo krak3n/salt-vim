@@ -6,7 +6,7 @@
     " Setting up Vundle - the vim plugin bundler
         let iCanHazVundle=1
         let vundle_readme=expand("~/.vim/bundle/vundle/README.md")
-        if !filereadable(vundle_readme) 
+        if !filereadable(vundle_readme)
             echo "Installing Vundle.."
             echo ""
             silent !mkdir -p ~/.vim/bundle
@@ -22,10 +22,9 @@
     " Bundles
 
 	" Core
-	Bundle 'Lokaltog/vim-powerline'
+	Bundle 'bling/vim-airline'
 	Bundle 'altercation/vim-colors-solarized'
 	Bundle 'sjl/vitality.vim'
-	" For Powerline
 	Bundle 'tpope/vim-fugitive'
 
 	" Interface
@@ -334,9 +333,10 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip,/logs/*,*.pyc,*.git,*.log,*jpg,*.png,*.
 nnoremap <F3> :NumbersToggle<CR>
 
 "--------------------------------------------------------------------------
-" Powerline
+" Airline
 "--------------------------------------------------------------------------
-let g:Powerline_symbols = 'fancy'
+let g:airline_powerline_fonts = 1
+let g:airline_theme = 'solarized'
 
 "--------------------------------------------------------------------------
 " Jinja2
@@ -367,7 +367,6 @@ au BufNewFile,BufRead nginx.conf set filetype=nginx
 "--------------------------------------------------------------------------
 " Jedi
 "--------------------------------------------------------------------------
-" Use buffers, not tabs
 let g:jedi#use_tabs_not_buffers = 0
 "
 "--------------------------------------------------------------------------
