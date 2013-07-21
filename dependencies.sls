@@ -3,10 +3,10 @@
 #
 
 {% set packages = [
-  "python", 
-  "python-dev", 
-  "python-setuptools", 
-  "curl", 
+  "python",
+  "python-dev",
+  "python-setuptools",
+  "curl",
   "git"] %}
 
 # We need python and various other packages
@@ -35,4 +35,5 @@ chris_vim_{{ pkg }}_install:
     - installed
     - name: {{ pkg }}
     - require:
-      - cmd: vim_chris_vim_pip_install
+      - cmd: chris_vim_pip_install
+{% endfor %}
