@@ -41,6 +41,7 @@
 	Bundle 'hail2u/vim-css3-syntax'
 	Bundle 'othree/html5.vim'
 	Bundle 'saltstack/salt-vim'
+    Bundle 'rodjek/vim-puppet'
 
 	" Python
 	Bundle 'python.vim'
