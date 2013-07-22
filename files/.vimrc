@@ -47,7 +47,6 @@
 	Bundle 'python.vim'
 	Bundle 'nvie/vim-flake8'
 	Bundle 'hynek/vim-python-pep8-indent'
-	Bundle 'davidhalter/jedi-vim'
 	Bundle 'ervandew/supertab'
 
     " Bundles end
@@ -365,11 +364,6 @@ au BufNewFile,BufRead *.sls set filetype=sls
 au BufNewFile,BufRead *.nginx.conf set filetype=nginx
 au BufNewFile,BufRead nginx.conf set filetype=nginx
 
-"--------------------------------------------------------------------------
-" Jedi
-"--------------------------------------------------------------------------
-let g:jedi#use_tabs_not_buffers = 0
-"
 "--------------------------------------------------------------------------
 " SuperTab
 "--------------------------------------------------------------------------
