@@ -333,12 +333,6 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip,/logs/*,*.pyc,*.git,*.log,*jpg,*.png,*.
 nnoremap <F3> :NumbersToggle<CR>
 
 "--------------------------------------------------------------------------
-" Airline
-"--------------------------------------------------------------------------
-let g:airline_powerline_fonts = 1
-let g:airline_theme = 'solarized'
-
-"--------------------------------------------------------------------------
 " Jinja2
 "--------------------------------------------------------------------------
 au BufNewFile,BufRead *.jinja set filetype=jinja
@@ -368,3 +362,17 @@ au BufNewFile,BufRead nginx.conf set filetype=nginx
 " SuperTab
 "--------------------------------------------------------------------------
 let g:SuperTabDefaultCompletionType = "<c-n>"
+
+"--------------------------------------------------------------------------
+" Bufferline
+"--------------------------------------------------------------------------
+let g:bufferline_echo = 0  " Do not echo to command bar
+let g:bufferline_active_buffer_left = ''
+let g:bufferline_active_buffer_right = ''
+let g:bufferline_modified = ' *'
+
+"--------------------------------------------------------------------------
+" Airline
+"--------------------------------------------------------------------------
+let g:airline_powerline_fonts = 1
+let g:airline_theme = 'solarized'
