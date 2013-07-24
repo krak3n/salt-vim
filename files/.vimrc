@@ -31,7 +31,7 @@
 	Bundle 'kien/ctrlp.vim'
 	Bundle 'myusuf3/numbers.vim'
 	Bundle 'scrooloose/nerdtree'
-	Bundle 'fholgado/minibufexpl.vim'
+	Bundle 'bling/vim-bufferline'
 
 	" Syntax
 	Bundle 'evanmiller/nginx-vim-syntax'
