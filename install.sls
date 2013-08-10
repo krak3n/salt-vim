@@ -2,7 +2,7 @@
 # Install Vim
 #
 
-chris_vim_install:
+local_vim_install:
   pkg:
     - installed
     - name: vim

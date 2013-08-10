@@ -20,11 +20,11 @@
 {% endfor %}
 
 # Vim Config File
-chris_vim_vimrc:
+local_vim_vimrc:
   file:
     - managed
     - name: /home/vagrant/.vimrc
-    - source: salt://chris_vim/files/.vimrc
+    - source: salt://local_vim/files/.vimrc
     - user: vagrant
     - group: vagrant
     - mode: 755

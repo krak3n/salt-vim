@@ -3,6 +3,6 @@
 #
 
 include:
-  - chris_vim.install
-  - chris_vim.dependencies
-  - chris_vim.config
+  - local_vim.install
+  - local_vim.dependencies
+  - local_vim.config
