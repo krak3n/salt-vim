@@ -11,7 +11,7 @@
 .vim-ppa:
   pkgrepo:
     - managed
-    - ppa: hackedbellini/vim
+    - ppa: nmi/vim-snapshots
     - require:
       - pkg: .python-software-properties
 
