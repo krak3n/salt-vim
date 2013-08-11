@@ -1,8 +1,10 @@
+#!stateconf yaml . jinja
+
 #
-# Vim
+# Vim Slat Module
 #
 
 include:
-  - local_vim.install
-  - local_vim.dependencies
-  - local_vim.config
+  - ..install
+  - ..bundles
+  - ..config
