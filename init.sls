@@ -6,5 +6,5 @@
 
 include:
   - ..install
-  - ..bundles
+  - ..bundle
   - ..config
