@@ -47,10 +47,10 @@
   pip:
     - installed
     - require:
-      - cmd: pip
+      - cmd: .pip
 
 .jedi:
   pip:
     - installed
     - require:
-      - cmd: pip
+      - cmd: .pip
