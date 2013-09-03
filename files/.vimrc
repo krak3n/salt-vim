@@ -34,6 +34,7 @@
 	Bundle 'bling/vim-bufferline'
 
 	" Syntax
+    Bundle 'editorconfig/editorconfig-vim'
 	Bundle 'evanmiller/nginx-vim-syntax'
 	Bundle 'plasticboy/vim-markdown'
 	Bundle 'Glench/Vim-Jinja2-Syntax'
