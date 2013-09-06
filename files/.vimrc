@@ -32,6 +32,7 @@
 	Bundle 'myusuf3/numbers.vim'
 	Bundle 'scrooloose/nerdtree'
 	Bundle 'bling/vim-bufferline'
+    Bundle 'moll/vim-bbye'
 
 	" Syntax
     Bundle 'editorconfig/editorconfig-vim'
@@ -212,7 +213,7 @@ noremap  <Right> ""
 noremap! <Right> <Esc>
 
 " Close current buffer
-map <leader>bd :Bclose<cr>
+map <leader>x :Bdelete<cr>
 
 " Specify the behavior when switching between buffers
 try
