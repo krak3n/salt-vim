@@ -26,6 +26,7 @@
 	Bundle 'altercation/vim-colors-solarized'
 	Bundle 'sjl/vitality.vim'
 	Bundle 'tpope/vim-fugitive'
+    Bundle 'vim-scripts/EasyGrep'
 
 	" Interface
 	Bundle 'kien/ctrlp.vim'
