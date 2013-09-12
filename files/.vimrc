@@ -44,6 +44,7 @@
 	Bundle 'othree/html5.vim'
 	Bundle 'saltstack/salt-vim'
     Bundle 'rodjek/vim-puppet'
+    Bundle 'digitaltoad/vim-jade'
 
 	" Python
 	Bundle 'python.vim'
