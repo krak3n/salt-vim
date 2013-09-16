@@ -47,6 +47,7 @@
     Bundle 'rodjek/vim-puppet'
     Bundle 'digitaltoad/vim-jade'
     Bundle 'wavded/vim-stylus'
+    Bundle 'skammer/vim-css-color'
 
 	" Python
 	Bundle 'python.vim'
