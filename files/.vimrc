@@ -47,13 +47,15 @@
     Bundle 'rodjek/vim-puppet'
     Bundle 'digitaltoad/vim-jade'
     Bundle 'wavded/vim-stylus'
-    Bundle 'skammer/vim-css-color'
 
 	" Python
 	Bundle 'python.vim'
 	Bundle 'nvie/vim-flake8'
 	Bundle 'hynek/vim-python-pep8-indent'
 	Bundle 'ervandew/supertab'
+
+    " Arduino
+    Bundle 'tclem/vim-arduino'
 
     " Bundles end
     if iCanHazVundle == 0
