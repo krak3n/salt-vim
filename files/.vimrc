@@ -21,41 +21,42 @@
 
     " Bundles
 
-	" Core
-	Bundle 'bling/vim-airline'
-	Bundle 'altercation/vim-colors-solarized'
-	Bundle 'sjl/vitality.vim'
-	Bundle 'tpope/vim-fugitive'
+    " Core
+    Bundle 'bling/vim-airline'
+    Bundle 'altercation/vim-colors-solarized'
+    Bundle 'sjl/vitality.vim'
+    Bundle 'tpope/vim-fugitive'
     Bundle 'vim-scripts/EasyGrep'
 
-	" Interface
-	Bundle 'kien/ctrlp.vim'
-	Bundle 'myusuf3/numbers.vim'
-	Bundle 'scrooloose/nerdtree'
-	Bundle 'bling/vim-bufferline'
+    " Interface
+    Bundle 'kien/ctrlp.vim'
+    Bundle 'myusuf3/numbers.vim'
+    Bundle 'scrooloose/nerdtree'
+    Bundle 'bling/vim-bufferline'
     Bundle 'moll/vim-bbye'
 
-	" Syntax
+    " Syntax
     Bundle 'editorconfig/editorconfig-vim'
-	Bundle 'evanmiller/nginx-vim-syntax'
-	Bundle 'plasticboy/vim-markdown'
-	Bundle 'Glench/Vim-Jinja2-Syntax'
-	Bundle 'groenewege/vim-less'
-	Bundle 'hail2u/vim-css3-syntax'
-	Bundle 'othree/html5.vim'
-	Bundle 'saltstack/salt-vim'
+    Bundle 'evanmiller/nginx-vim-syntax'
+    Bundle 'plasticboy/vim-markdown'
+    Bundle 'Glench/Vim-Jinja2-Syntax'
+    Bundle 'groenewege/vim-less'
+    Bundle 'hail2u/vim-css3-syntax'
+    Bundle 'othree/html5.vim'
+    Bundle 'saltstack/salt-vim'
     Bundle 'rodjek/vim-puppet'
     Bundle 'digitaltoad/vim-jade'
     Bundle 'wavded/vim-stylus'
 
-	" Python
-	Bundle 'python.vim'
-	Bundle 'nvie/vim-flake8'
-	Bundle 'hynek/vim-python-pep8-indent'
-	Bundle 'ervandew/supertab'
+    " Python
+    Bundle 'python.vim'
+    Bundle 'nvie/vim-flake8'
+    Bundle 'hynek/vim-python-pep8-indent'
+    Bundle 'ervandew/supertab'
 
     " Arduino
     Bundle 'tclem/vim-arduino'
+    Bundle 'arduino.vim'
 
     " Bundles end
     if iCanHazVundle == 0
@@ -375,8 +376,8 @@ let g:SuperTabDefaultCompletionType = "<c-n>"
 " Bufferline
 "--------------------------------------------------------------------------
 let g:bufferline_echo = 0  " Do not echo to command bar
-let g:bufferline_active_buffer_left = ''
-let g:bufferline_active_buffer_right = ''
+let g:bufferline_active_buffer_left = '['
+let g:bufferline_active_buffer_right = ']'
 let g:bufferline_modified = ' *'
 
 "--------------------------------------------------------------------------
@@ -384,3 +385,9 @@ let g:bufferline_modified = ' *'
 "--------------------------------------------------------------------------
 let g:airline_powerline_fonts = 1
 let g:airline_theme = 'solarized'
+
+"--------------------------------------------------------------------------
+" Arduino
+"--------------------------------------------------------------------------
+au BufRead,BufNewFile *.pde set filetype=arduino
+au BufRead,BufNewFile *.ino set filetype=arduino
