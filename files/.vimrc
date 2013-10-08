@@ -47,7 +47,7 @@
     Bundle 'rodjek/vim-puppet'
     Bundle 'digitaltoad/vim-jade'
     Bundle 'wavded/vim-stylus'
-    Bundke 'ekalinin/Dockerfile.vim'
+    Bundle 'ekalinin/Dockerfile.vim'
 
     " Python
     Bundle 'python.vim'
