@@ -25,7 +25,6 @@
     Bundle 'bling/vim-airline'
     Bundle 'altercation/vim-colors-solarized'
     Bundle 'sjl/vitality.vim'
-    Bundle 'tpope/vim-fugitive'
     Bundle 'vim-scripts/EasyGrep'
 
     " Interface
@@ -34,6 +33,7 @@
     Bundle 'scrooloose/nerdtree'
     Bundle 'bling/vim-bufferline'
     Bundle 'moll/vim-bbye'
+    Bundle 'Valloric/YouCompleteMe'
 
     " Syntax
     Bundle 'editorconfig/editorconfig-vim'
@@ -392,3 +392,9 @@ let g:airline_theme = 'solarized'
 "--------------------------------------------------------------------------
 au BufRead,BufNewFile *.pde set filetype=arduino
 au BufRead,BufNewFile *.ino set filetype=arduino
+
+"--------------------------------------------------------------------------
+" YCM
+"--------------------------------------------------------------------------
+
+let g:ycm_autoclose_preview_window_after_completion=1
