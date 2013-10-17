@@ -398,3 +398,4 @@ au BufRead,BufNewFile *.ino set filetype=arduino
 "--------------------------------------------------------------------------
 
 let g:ycm_autoclose_preview_window_after_completion=1
+nnoremap <leader>g :YcmCompleter GoToDefinitionElseDeclaration<CR>
