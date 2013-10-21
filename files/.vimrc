@@ -57,7 +57,6 @@
 
     " Arduino
     Bundle 'tclem/vim-arduino'
-    Bundle 'arduino.vim'
 
     " Bundles end
     if iCanHazVundle == 0
